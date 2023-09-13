@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Sidebar Title */
+.sidebar-title {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.sidebar-title h1 {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    letter-spacing: 3px;
+}
+
+.sidebar-title h1:hover{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    letter-spacing: 6px;
+    transition: color 0.3s, font-size 0.3s, letter-spacing 0.3s; /* Added transitions for smoother hover effect */
+.logo-container img:hover {
+    transform: skew(20deg, 10deg); /* Adjust the angles as needed */
+}
+    /*transition: transform 0.2s ease, letter-spacing 0.2s ease; /* Smooth transition for both transform and letter-spacing */
+} 
+
+.sidebar-title::before,
+.sidebar-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #31333F;
+    background-color: #31333F;
+    opacity: .3;
+    transition: opacity 0.3s; /* Added opacity transition on hover */
+}
+
+.sidebar-title::before {
+    top: 0;
+    margin-top: -.2rem;
+}
+
+.sidebar-title::after {
+    bottom: 2.2rem;
+}
+
+/* Logo Container */
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.logo-container img {
+    max-width: 60px;
+    padding-top: 10px;
+    padding-right: 5px;
+    transition: transform 0.3s; /* Added a rotation animation on hover */
+}
+
+.logo-container img:hover {
+    transform: scale(1.2) rotate(20deg); 
+}
+
+/* Sidebar Links */
+.first-sidebar-link {
+    margin-top: 6.5rem;
+    justify-content: center;
+    text-align: center;
+    color: #31333F;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    text-shadow: #31333F;
+    transition: transform 0.3s; /* Added a scale animation on hover */
+}
+
+.sidebar-link {
+    justify-content: center;
+    text-align: center;
+    color: #31333F;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-shadow: #31333F;
+    transition: transform 0.3s; /* Added a scale animation on hover */
+}
+
+.first-sidebar-link a, .sidebar-link a {
+    justify-content: center;
+    text-align: center;
+    color: #31333F;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    transition: color 0.3s, font-size 0.3s, letter-spacing 0.3s; /* Added transitions for smoother hover effect */
+}
+
+.first-sidebar-link a:hover, .sidebar-link a:hover {
+    letter-spacing: 5px;
+    color: #FF4B4B;
+    font-size: 18px;
+    transform: scale(1.1); /* Added a scale animation on hover */
+}
